@@ -47,7 +47,8 @@ services:
       - ./logs:/app/logs
     extra_hosts:
       - "host.docker.internal:host-gateway"
-  
+
+# Example if you want to collect container logs and send to Fluent-bit
   nginx:
     image: nginx
     ports:
